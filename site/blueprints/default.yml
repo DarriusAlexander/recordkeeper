@@ -1,0 +1,23 @@
+title: Page
+pages: true
+  
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: text
+    link:
+      label: link
+      type: url
+    tags:
+      label: tags
+      type: tags
+    date:
+      label: Date
+      type: date
+fields:
+  title: title
+  slider: slider
+  text: wysiwyg
+  relatedproducts: relatedproducts

@@ -1,0 +1,50 @@
+/* Hide toolbar */
+.app {
+	padding-top: 0;
+}
+.topbar {
+	display: none;
+}
+
+/* Hide some account fields */
+.field-name-username,
+.field-name-role {
+	display: none;
+}
+
+/* Change text of "Cancel" to  "Back" */
+.btn-cancel {
+	position: relative;
+}
+.btn-cancel:before {
+	display: block;
+	background: #efefef;
+	width: 70%;
+	left: 15%;
+	height: 1.5em;
+	line-height: 1.5em;
+	content: 'Back';
+	position: absolute;
+	margin-top: -0.25em;
+	text-align: center;
+}
+.btn-cancel:hover:before,
+.btn-cancel:focus:before {
+	background: black;
+	color: white;
+}
+
+/* Change text of "Log Out" to "Back to site" */
+a[href*='/panel/logout'] {
+	color: white;
+}
+a[href*='/panel/logout']:before {
+	content: 'Back to site';
+	color: black;
+}
+a[href*='/panel/logout'] .fa-power-off {
+	color: black;
+}
+a[href*='/panel/logout'] .fa-power-off:before {
+	content:""; /* Change the logout icon to a left arrow */
+}

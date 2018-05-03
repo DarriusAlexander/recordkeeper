@@ -1,0 +1,15 @@
+<?php if(!defined('KIRBY')) exit ?>
+
+title: Booking Mail
+pages: false
+fields:
+	
+
+	confirmationText:
+		label: Order Confirmation
+		type: textarea
+		required: true
+	successText:
+		label: Order Success Confirmation
+		type: textarea
+		required: true

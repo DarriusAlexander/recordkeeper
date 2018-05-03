@@ -1,0 +1,15 @@
+label: Related products
+type: snippetfield
+snippet: related-product
+fields:
+  product:
+    type: select
+    options: query
+    query: 
+      page: shop
+      fetch: pages
+      template: product
+      value: "{{uri}}"
+      text: "{{title}}"
+    required: true
+translate: false

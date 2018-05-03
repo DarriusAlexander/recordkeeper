@@ -1,0 +1,22 @@
+#page {
+    width: 1065px;
+    overflow: auto;
+}
+
+#pagetext {
+    width: 690px;
+    background-color: #fff;
+    z-index: 2;
+    height: 100%;
+    min-height: 700px;
+    padding: 10px 2px 0 9px;
+}
+
+#player {margin: 29px 0 0 22px;}
+
+a {color: #000; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+#buttons {margin-top: 75px;}
+#buttons a {margin-right: 10px;}
+#news-video {display: none;left: -100px;position: absolute;top: 150px;z-index: 100;width: 640px; height: 400px;}

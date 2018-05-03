@@ -1,0 +1,27 @@
+title: Contact page
+pages: false
+options:
+  delete: false
+  template: false
+  url: false
+fields:
+  title: title
+  slider: slider
+  text: wysiwyg
+  hours:
+    extends: wysiwyg
+    label: Hours of operation
+  phone:
+    label: Phone number
+    type: text
+    translate: false
+  email:
+    label: Email address
+    type: email
+    validate: email
+    translate: false
+  location:
+    label: Address
+    type: textarea
+    buttons: false
+    translate: false

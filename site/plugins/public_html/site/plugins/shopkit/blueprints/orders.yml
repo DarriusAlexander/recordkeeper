@@ -1,0 +1,12 @@
+title: Orders
+pages:
+  max: 1
+  sort: txn_date desc
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+fields:
+  title: title
+  text: wysiwyg

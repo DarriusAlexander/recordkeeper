@@ -1,0 +1,437 @@
+@font-face {
+    font-family: 'DINNextLTPro-Medium';
+    src: url('../fonts/DINNextLTPro-Mediumd41d.eot?#iefix') format('embedded-opentype'),  url('../fonts/DINNextLTPro-Medium.html')  format('opentype'),
+           url('../fonts/DINNextLTPro-Medium.woff') format('woff'), url('DINNextLTPro-Medium.html')  format('truetype'), url('../fonts/DINNextLTPro-Medium.svg#DINNextLTPro-Medium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body{
+      /*overflow: hidden;*/
+      font-family: Arial;font-size:12px;color:#000;line-height:18px;background-color:#fefdfd;margin: 0;padding: 0;text-align: center;}
+  
+  #intro_table {margin: 0 auto; text-align: left; width: 100%; border: none; z-index:9999; overflow: hidden; padding: 0;height: 100%; position: absolute;}
+  .grey { background:#fefdfd; }
+  a#introclick {display:block;text-decoration:none;/*width:1024px;height:264px;*/}
+  #intro_table #table_top {width: 1020px; background-color: #ffffff; position: absolute; bottom: 466px; left: 0px; height: 564px;}
+  #intro_table #table_r1 {width: 250px; background-color: #ffffff; position: absolute; bottom: 99px; left: 0px; height: 243px;}
+  #intro_table #table_r2 {position: absolute; bottom: 100px; left: 250px; padding: 0; margin: 0;vertical-align: bottom;}
+  #intro_table #table_r3 {position: absolute; bottom: 100px; left: 1020px; overflow: hidden;}
+  #intro_table #table_r4 {position: absolute; bottom: 343px; left: 0px; width: 604px; height: 123px; overflow: hidden; background-color: #ffffff;}
+  #intro_table #table_r5 {position: absolute; bottom: 343px; left: 604px; overflow: hidden;}
+  #intro_table #table_r5_1 {position: absolute; bottom: 343px; left: 604px; overflow: hidden;}
+  #intro_table #table_r7 {position: absolute; bottom: 0px; left: 0px; width: 100%; height: 101px; overflow: hidden; background-color: #ffffff;}
+  /*#intro_table #right_box {position: absolute; top: 0px; left: 1676px; overflow: hidden; background-color: #ffffff;}*/
+  #intro_table #top_box {position: absolute; bottom: 0px; right: 0px; overflow: hidden; background-color: #ffffff;}
+  #bg_black {position: fixed;}
+  table, tr, th, td { border: none; }
+  img, div, a img, a { margin:0; padding:0; border:none; text-decoration:none;}
+  span.hidden, img.hidden{display: none;}
+  .clear{clear: both;}
+  .fl{float: left;}
+  .fr{float: right;}
+  .strong {font-weight: bold;}
+  .displ {display: none;}
+  h1 {color: #000;font-size: 70px; line-height: 40pt;margin:0;/*font-weight: bold;*/}
+  h2 {color: #000;font-size: 70px; line-height: 40pt;margin: 100px 0 10px 0;}
+  
+  #page {
+      z-index: 3;
+      width: 970px;
+      position: relative;
+      height: auto;
+      /*margin: 0 auto;*/
+      text-align: left;
+  }
+  
+  #opaque {
+      background-color: #FFFFFF;
+      height: 100%;
+      left: 0;
+      opacity: 0.80;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+  }
+  
+  #menu, #menu1 {
+      width: 1329px;
+      top: 16px;
+      z-index: 2;
+      float: left;
+      margin: 0 20px 0 10px;
+      min-height: 2000px;
+  }
+  #menu1 {
+      position: relative;
+  }
+  #menu {
+      position: fixed;
+  }
+  #menu ul {padding: 0;margin: 0;}
+  #menu ul li {text-align: right;list-style: none;padding: 0;margin: 2px 0;}
+  #menu #all a {/*background: transparent url('/images/menu_all.png') 0 0 no-repeat;*/width: 593px;height: 161px;display: block;position: relative;left: 236px;}
+  /*#menu #all a:hover, #menu #all a.active {background-position: 0 -61px;}*/
+  #menu #lifestyle a {/*background: transparent url('/images/menu_lifestyle.png') 0 0 no-repeat;*/width: 250px;height: 61px;display: block;position: relative;left: 79px;}
+  /*#menu #lifestyle a:hover, #menu #lifestyle a.active {background-position: 0 -61px;}*/
+  #menu #fashion a {/*background: transparent url('/images/menu_fashion.png') 0 0 no-repeat;*/width: 205px;height: 63px;display: block;position: relative;left: 124px;}
+  /*#menu #fashion a:hover, #menu #fashion a.active {background-position: 0 -63px;}*/
+  #menu #people a {/*background: transparent url('/images/menu_people.png') 0 0 no-repeat;*/width: 184px;height: 61px;display: block;position: relative;left: 145px;}
+  #menu #project a {width: 341px;height: 62px;display: block;position: relative;left: -14px;}
+  #menu #underwater a {width: 332px;height: 62px;display: block;position: relative;left: 0px;}
+  /*#menu #people a:hover, #menu #people a.active {background-position: 0 -61px;}*/
+  #menu #commercial a {/*background: transparent url('/images/menu_commercial.png') 0 0 no-repeat;*/width: 321px;height: 63px;display: block;position: relative;left: 8px;}
+  /*#menu #commercial a:hover, #menu #commercial a.active {background-position: 0 -63px;}*/
+  #menu #briefcase a {/*background: transparent url('/images/menu_briefcase.png') 0 0 no-repeat;*/width: 329px;height: 63px;display: block;position: relative;left: 0px;}
+  /*#menu #briefcase a:hover, #menu #briefcase a.active {background-position: 0 -63px;}*/
+  #menu #scrapbook a {/*background: transparent url('/images/menu_scrapbook.png') 0 0 no-repeat;*/width: 298px;height: 62px;display: block;position: relative;left: 31px;}
+  /*#menu #scrapbook a:hover, #menu #scrapbook a.active {background-position: 0 -62px;}*/
+  #menu #blog a {/*background: transparent url('/images/menu_blog.png') 0 0 no-repeat;*/width: 125px;height: 63px;display: block;position: relative;left: 204px;}
+  /*#menu #blog a:hover, #menu #blog a.active {background-position: 0 -63px;}*/
+  #menu #info a {/*background: transparent url('/images/menu_info.png') 0 0 no-repeat;*/width: 109px;height: 62px;display: block;position: relative;left: 220px;}
+  /*#menu #info a:hover, #menu #info a.active {background-position: 0 -62px;}*/
+  
+  /*#topmenu {width: 100%; height: 29px; z-index: 5;position: absolute; top: 0px;background: transparent url("/images/top_menu_bg.png") 0 0 repeat-x;}*/
+  #topmenu {width: 100%; height: 29px; z-index: 5;position: fixed; top: 0px;background-color: #FFFFFF; opacity: 0.50}
+  #topmenu #logo {position: relative;z-index: 10;width: 121px;}
+  #topmenu #logo_normal {position: absolute;left: 0;top: 0;z-index: 6;}
+  #topmenu #logo_hover {position: absolute;left: 0;top: 0;z-index: 5; display: none;}
+  #topmenu #baggage {position: relative; top: 4px; width: 100px;z-index: 10;}
+  #topmenu #baggage #bagg {width: 20px;float: left;}
+  #topmenu #baggage #number {/*background: transparent url("/images/baggage_number_bg.png") no-repeat 0 0;*/ width: 20px; height: 21px; float: left; color: #000000;position: relative;left: 10px;font-weight: bold;}
+  #topmenu #baggage #number span {position: absolute; top: 2px; left: 7px; font-size: 12px;}
+  #topmenu #baggage #bagg a {background: transparent url("../images/butt_baggage.png") 0 0 no-repeat; width: 20px; height: 21px; display: block;}
+  #topmenu #baggage #bagg a:hover {background-position: 0 -21px;}
+  
+  #toptopmenu {clear: both;position: absolute;top: 7px;z-index: 10;width: 440px;}
+  #toptopmenu ul {margin: 0;padding: 0;}
+  #toptopmenu ul li {list-style: none;padding: 0;margin: 0 20px 0 0; float: left;}
+  #toptopmenu ul li#saveorder a {background: transparent url("../images/topmenu_saveorder.png") 0 0 no-repeat; width: 68px; height: 14px; display: block;}
+  #toptopmenu ul li#saveorder a:hover {background-position: 0 -14px;}
+  #toptopmenu ul li#deleteall a {background: transparent url("../images/topmenu_deleteall.png") 0 0 no-repeat; width: 65px; height: 14px; display: block;}
+  #toptopmenu ul li#deleteall a:hover {background-position: 0 -14px;}
+  #toptopmenu ul li#createpdf a {background: transparent url("../images/topmenu_createpdf.png") 0 0 no-repeat; width: 66px; height: 14px; display: block;}
+  #toptopmenu ul li#createpdf a:hover {background-position: 0 -14px;}
+  #toptopmenu ul li#all a {background: transparent url("../images/topmenu_all.png") 0 0 no-repeat; width: 24px; height: 15px; display: block;}
+  #toptopmenu ul li#all a:hover {background-position: 0 -15px;}
+  #toptopmenu ul li#lifestyle a {background: transparent url("../images/topmenu_lifestyle.png") 0 0 no-repeat; width: 62px; height: 15px; display: block;}
+  #toptopmenu ul li#lifestyle a:hover {background-position: 0 -15px;}
+  #toptopmenu ul li#fashion a {background: transparent url("../images/topmenu_fashion.png") 0 0 no-repeat; width: 51px; height: 15px; display: block;}
+  #toptopmenu ul li#fashion a:hover {background-position: 0 -15px;}
+  #toptopmenu ul li#people a {background: transparent url("../images/topmenu_people.png") 0 0 no-repeat; width: 45px; height: 15px; display: block;}
+  #toptopmenu ul li#people a:hover {background-position: 0 -15px;}
+  #toptopmenu ul li#commercial a {background: transparent url("../images/topmenu_commercial.png") 0 0 no-repeat; width: 80px; height: 15px; display: block;}
+  #toptopmenu ul li#commercial a:hover {background-position: 0 -15px;}
+  
+  #toptopmenu ul li#more {width: 48px;}
+  #toptopmenu ul li#more a {background: transparent url("../images/topmenu_more.png") 0 0 no-repeat; width: 48px; height: 15px; display: block;}
+  #toptopmenu ul li#more a:hover {background-position: 0 -15px;}
+  #toptopmenu ul li ul#submenu {display: none;background-color: #ffffff;margin-left: -5px;width: 90px;}
+  #toptopmenu ul li ul#submenu li.first {display: block;float: none;margin: 0;padding: 10px 5px 4px 5px; background-color: #ffffff; width: 80px;}
+  #toptopmenu ul li ul#submenu li {display: block;float: none;margin: 0;padding: 5px 5px 6px 5px; background-color: #ffffff; width: 80px;}
+  #toptopmenu ul li ul#submenu li#project a {background: transparent url("../images/topmenu_project.png") 0 0 no-repeat; width: 50px; height: 15px; display: block;}
+  #toptopmenu ul li ul#submenu li#project a:hover {background-position: 0 -15px;}
+  #toptopmenu ul li ul#submenu li#underwater a {background: transparent url("../images/topmenu_underwater.png") 0 0 no-repeat; width: 78px; height: 15px; display: block;}
+  #toptopmenu ul li ul#submenu li#underwater a:hover {background-position: 0 -15px;}
+  
+  #pagephoto {position: relative;overflow: hidden;height: 0; top: 40px;}
+  #pagephoto div.still {margin: 0 6px 0 0;}
+  #pagephoto div.still div.overlay {
+      background: url("../images/transparent-1x1px.png") repeat scroll 0 0 transparent;
+      display: none;
+      left: 0;
+      position: absolute;
+      top: 0;
+      z-index: 5;
+  }
+  
+  #pagephoto div.still a {
+      background: url("../images/spacer.gif") repeat scroll 0 0 transparent;
+      display: block;
+      left: 0;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 7;
+  }
+  
+  #pagephoto div.still div.img img {
+      height: 105px;
+  }
+  
+  #pagephoto div.still div.text {
+      color: #888888;
+      display: none;
+      height: 94px;
+      left: 0;
+      line-height: 17px;
+      padding: 12px 12px 12px 15px;
+      position: absolute;
+      top: 0;
+      width: 178px;
+      z-index: 6;
+  }
+  
+  div#pagination {display: none;}
+  div#pagination a img {
+      border-bottom: 4px solid #FFFFFF;
+      margin-left: 8px;
+      height: 27px;
+  }
+  
+  #pagetext {position: relative;text-align: left;}
+  a.facebook {background: transparent url("../images/butt_fb.png") 0 0 no-repeat; width: 24px; height: 23px; display: block; position: absolute; left: 20px;}
+  a.facebook:hover {background-position: 0 -23px;}
+  a.pinterest {background: transparent url("../images/butt_pinterest.png") 0 0 no-repeat; width: 24px; height: 23px; display: block; position: absolute; left: 50px;}
+  a.pinterest:hover {background-position: 0 -23px;}
+  a.tumbler {background: transparent url("../images/butt_tumbler.png") 0 0 no-repeat; width: 24px; height: 23px; display: block; position: absolute; left: 80px;}
+  a.tumbler:hover {background-position: 0 -23px;}
+  a.twitter {background: transparent url("../images/butt_twitter.png") 0 0 no-repeat; width: 24px; height: 23px; display: block; position: absolute; left: 110px;}
+  a.twitter:hover {background-position: 0 -23px;}
+  a.instagram {background: transparent url("../images/butt_instagram.png") 0 0 no-repeat; width: 24px; height: 24px; display: block; position: absolute; left: 140px;}
+  a.instagram:hover {background-position: 0 -24px;}
+  a.behance {background: transparent url("../images/butt_behance.png") 0 0 no-repeat; width: 24px; height: 24px; display: block; position: absolute; left: 170px;}
+  a.behance:hover {background-position: 0 -24px;}
+  
+  #but {position: fixed;left: 0;bottom: 40px; z-index: 5;}
+  
+  #gallery{ display:none; position: absolute; top: 64px; left: 0; color:#FFF; }
+  #arrow-left{ display:none; position: absolute; top: 0; left: 0; width:33.3%; height:100%; }
+  #arrow-left a{ display:block; width:100%; height:100%; }
+  #arrow-left a:hover { background:url("../images/arrow-left.png") 0 50% no-repeat; }
+  #arrow-left.black a:hover { background:url("../images/arrow-left-black.png") 0 50% no-repeat; }
+  #grid-icon{ display:none; position: absolute; top: 0; left: 33.3%; width:33.4%; height:100% !important; }
+  #grid-icon a{ display:block; width:100%; height:100%; }
+  #grid-icon a:hover { background:url("../images/grid-over.png") 50% 50% no-repeat; }
+  #arrow-right{ display:none; position: absolute; top: 0; right: 0; width:33.3%; height:100%; }
+  #arrow-right a{ display:block; width:100%; height:100%; }
+  #arrow-right a:hover{ background:url("../images/arrow-right.png") 100% 50% no-repeat; }
+  #arrow-right.black a:hover{ background:url("../images/arrow-right-black.png") 100% 50% no-repeat; }
+  #key-icon{ display:none; position: absolute; bottom: 13px; right: 80px; width:69px; height:45px !important; overflow: hidden;}
+  #key-icon a{ display:block; width:100%; height:100%; }
+  #key-icon a { background:url("../images/key-icon.png") 50% 50% no-repeat; }
+  #key-icon.black a { background:url("../images/key-icon-black.png") 50% 50% no-repeat; }
+  
+  div#top_white {
+      /*background: url("images/transparent-1x1px.png") repeat scroll 0 0 transparent;*/
+      top: 0;
+      height: 37px;
+      left: 0;
+      position: fixed;
+      width: 100%;
+      z-index: 6;
+      padding-top: 4px;
+  }
+  
+  div#top_right {
+      position: absolute;
+      right: 18px;
+  }
+  
+  #slide_btn a.play {background: transparent url("../images/butt_startstop.png") no-repeat 0 -19px;display: block;height: 19px;text-decoration: none;width: 94px;position: absolute;top: 5px;left: 50px;z-index: 10;}
+  #slide_btn a.play:hover {background-position: 0 -57px;}
+  #slide_btn a.pause {background: transparent url("../images/butt_startstop.png") no-repeat 0 0;display: block;height: 19px;text-decoration: none;width: 94px;position: absolute;top: 5px;left: 50px;z-index: 10;}
+  #slide_btn a.pause:hover {background-position: 0 -38px;}
+  
+  div#add_to_lightbox {
+      bottom: 13px;
+      display: inline;
+      float: left;
+      height: 24px;
+      overflow: hidden;
+      position: fixed;
+      right: 200px;
+      z-index: 111;
+  }
+  
+  div#add_to_lightbox a {
+      color: #FFFFFF;
+      text-decoration: none;
+      background: transparent url("../images/butt_addbriefcase.png") no-repeat 0 0;
+      height: 17px;
+      width: 136px;
+      display: block;
+  }
+  div#add_to_lightbox a:hover {
+      color: #FFFFFF;
+      background-position: 0 -17px;
+  }
+  
+  div#add_to_lightbox.black a {
+      color: #FFFFFF;
+      text-decoration: none;
+      background: transparent url("../images/butt_addbriefcase_black.png") no-repeat 0 0;
+      height: 17px;
+      width: 136px;
+      display: block;
+  }
+  div#add_to_lightbox.black a:hover {
+      color: #FFFFFF;
+      background-position: 0 -17px;
+  }
+  
+  div#pagination a.activeslide img, div#pagination a img:hover {
+      border-bottom: 4px solid #737373;
+      cursor: pointer;
+  }
+  
+  .deletefrombriefcase {
+    background:url("../images/delete.gif");
+    width: 11px;
+    height: 11px;  
+    position: absolute;
+    margin-left:-11px;
+  }
+  
+  #grid-content {
+      width: 940px;
+      margin-top: 10px;
+  }
+  
+  #grid-content div.scrapbook {
+      color: #FFFFFF;
+      margin: 0;
+      width: 172px;
+  }
+  #grid-content div.thumbnail div.img {
+      display: block;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 170px;
+      z-index: 4;
+  }
+  
+  #grid-content div.scrapbook div.article div.overlay {
+      background: url("../images/transparent-1x1px.png") repeat scroll 0 0 transparent;
+      color: #888888;
+      display: none;
+      height: 100%;
+      left: 0;
+      padding: 0;
+      position: absolute;
+      text-decoration: none;
+      top: 0;
+      width: 170px;
+      z-index: 2;
+  }
+  #grid-content div.scrapbook div.article div.text {
+      color: #888888;
+      display: none;
+      left: 0;
+      line-height: 17px;
+      padding: 12px 12px 12px 15px;
+      position: absolute;
+      text-decoration: none;
+      top: 0;
+      width: 143px;
+      z-index: 3;
+  }
+  #grid-content div.scrapbook div.article a {background: none repeat scroll 0 0 transparent;color: #888888;display: block;height: 100%;left: 0;padding: 0;position: absolute;text-decoration: none;top: 0;width: 166px;z-index: 4;}
+  #grid-content div.scrapbook div.article {display: inline;float: left;height: 100%;position: relative;width: 166px;}
+  .infosection h1 {background: transparent url("../images/info_bio.png") no-repeat 0 0; width: 80px; height: 62px;}
+  .infosection h2 {background: transparent url("../images/info_contact.png") no-repeat 0 0; width: 227px; height: 62px;}
+  #shine img {z-index: 1;position: absolute; overflow: hidden; display: block; height: 100%;}
+  #shine {position: fixed; width: 100%; height: 100%;}
+  .briefcase-box {width: 163px; height: 108px; background: #fff;}
+  .briefcase-box p {color: #888888; padding: 10px; display:block;margin:0;font-weight: bold;}
+  .briefcase-box p span {color: #000;font-weight: normal;}
+  .briefcase-list {padding: 0 0 200px 0; width: 900px;}
+  .briefcase-list li {margin: 5px;display:block; float: left;}
+  .briefcase-list a {cursor: pointer; color: #888888; text-decoration: none;font-weight: bold;}
+  .briefcase-list a:hover {text-decoration: underline;} 
+  
+  
+  .burningMan-wrapper {
+      width: 100%;
+      border: none;
+      z-index: 999999;
+      overflow: hidden;
+      padding: 0;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: block;
+  }
+  
+  .burningMan-inner {
+      width: 40%;
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px auto 0;
+  }
+  
+  .burningMan-inner h1 {
+    font-size: 32px;
+  }
+  
+  .burningMan-inner img {width: 100%;}
+  
+  .burningMan-inner .burningMan-link {font-size: 20px; color: #000000; text-decoration: none;}
+  .burningMan-inner .burningMan-link:hover {text-decoration: underline;}
+  .burningMan-inner .burningMan-link:before {content: "\203A";
+      text-indent: -20px;
+      position: relative;
+      display: inline-block;
+      top: -1px;
+      font-size: 22px;}
+  
+  .popupBurningMan {
+      z-index: 1000;
+      position: absolute;
+      top: 30px;
+      right: 0px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px 20px;
+      font-family: 'DINNextLTPro-Medium';
+      font-size: 18px;
+      text-align: left;
+      max-width: 400px;
+      display: none;
+  }
+  
+  .popupBurningMan p {
+      text-transform: uppercase;
+      font-size: 20px;
+      margin-top: 13px;
+  }
+  
+  .popupBurningMan p span {display: block;}
+  
+  .popupBurningMan ul {
+      text-align: left;
+  }
+  
+  .popupBurningMan ul li {
+      font-size: 16px;
+  }
+  
+  .popupBurningMan p span, ul li span {
+      color: #ce3742;
+  }
+  
+  .popupBurningMan img {width: 100%;}
+  
+  .popupBurningMan .button-wrapper {
+    margin: 30px 0 20px;
+  }
+  
+  .popupBurningMan .button-wrapper a {
+      border:  2px solid #000000;
+      color: #000000;
+      border-radius: 5px;
+      padding: 10px;
+      margin-left: 30px;
+      text-transform: uppercase;
+  }
+  
+  .popupBurningMan .button-wrapper a:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+  
+  .popupBurningMan .button-wrapper a.close-popup {
+    margin-left: 63px;
+  }

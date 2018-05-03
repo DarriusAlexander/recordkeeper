@@ -1,0 +1,10 @@
+title: Home page
+pages: true
+  template: 
+    - category
+    - product
+
+fields:
+  title: title
+  slider: slider
+  text: wysiwyg

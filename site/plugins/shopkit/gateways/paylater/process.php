@@ -1,0 +1,1 @@
+<?php go(page('shop/cart/callback')->url().'/gateway'.url::paramSeparator().'paylater/id'.url::paramSeparator().$txn->txn_id()) ?>

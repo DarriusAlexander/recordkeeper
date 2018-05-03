@@ -1,0 +1,47 @@
+# Ignore system files and log files
+.DS_Store
+/site/plugins/dompdf/lib/fonts/log.htm
+
+# Ignore account files and avatars
+/site/accounts/*
+!/site/accounts/.gitkeep
+/assets/avatars/*
+!/assets/avatars/.gitkeep
+
+# Ignore Photoshop files
+/assets/psd/*
+
+# Ignore generated thumbnails
+/thumbs/*
+!/thumbs/.gitkeep
+
+# Ignore cache files
+/site/cache/*
+
+# Ignore non-default content files
+/content/1-shop/*
+!/content/1-shop/cart
+!/content/1-shop/countries
+!/content/1-shop/terms-conditions
+/content/1-shop/orders/*
+!/content/1-shop/orders
+!/content/1-shop/orders/orders.en.txt
+!/content/1-shop/shop.en.txt
+/content/4-docs
+/content/kirbystats
+
+# Ignore log files
+/logs/*
+
+# Ignore CodeKit settings file
+config.codekit3
+
+# Ignore build files
+.sass-cache/
+.sublime-grunt.cache
+Gruntfile.js
+node_modules/
+package.json
+shrinkwrap.yaml
+*.sublime-project
+*.sublime-workspace

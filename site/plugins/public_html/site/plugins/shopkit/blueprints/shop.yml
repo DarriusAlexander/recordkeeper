@@ -1,0 +1,14 @@
+title: Home page
+pages: true
+  template:
+    - category
+    - product
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+fields:
+  title: title
+  slider: slider
+  text: wysiwyg

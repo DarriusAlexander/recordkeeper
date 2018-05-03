@@ -1,0 +1,32 @@
+title: Commercial Gallery
+
+pages: false
+
+
+
+files:
+  sortable: true
+  fields:
+    caption:
+      label: Caption
+      type: text
+    link:
+      label: link
+      type: url
+    tags:
+      label: tags
+      type: tags
+    date:
+      label: Date
+      type: date
+
+
+fields:
+ title:
+    label: Title
+    type: title
+    required: true
+    width: 3/4
+ 
+ 
+

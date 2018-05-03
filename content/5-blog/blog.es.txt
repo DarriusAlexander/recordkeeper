@@ -1,0 +1,13 @@
+Title: Blog
+
+----
+
+Text: 
+
+----
+
+Perpage: 5
+
+----
+
+Info: 

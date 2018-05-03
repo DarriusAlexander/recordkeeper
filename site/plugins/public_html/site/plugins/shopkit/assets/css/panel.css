@@ -1,0 +1,113 @@
+/* Dropzone for list of file */
+.marginalia[href="#upload"] {
+	padding: 1rem 1rem 1rem 4rem;
+	position: relative;
+	display: block;
+	border: 2px dashed lightgrey;
+	border-radius: 0.3em;
+}
+html[lang="en"] .marginalia[href="#upload"]:after {
+	content: '. Drag & drop here to upload.';
+}
+.marginalia[href="#upload"]:before {
+	position: absolute;
+	display: block;
+	left: 1rem;
+	top: 50%;
+	margin-top: -0.7rem;
+	font-family: 'FontAwesome';
+	font-size: 2rem;
+	content: '\f0ee';
+	color: #CCC;
+}
+.marginalia[href="#upload"]:hover:before,
+.marginalia[href="#upload"]:focus:before {
+	color: inherit;
+}
+
+/* Page save button */
+.mainbar .section > form > .buttons {
+	border-top: 2px solid #ddd;
+	background: #efefef;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+}
+
+/* Tabs in modal boxes */
+.modal-content .tab-nav li.active {
+	background: inherit;
+}
+
+/* Structure field entries */
+.structure-entry-content .badge {
+	background: #efefef;
+	border: 2px solid #ddd;
+	padding: 0.1em 0.25em;
+	font-size: 0.8em;
+	vertical-align: 1px;
+}
+.structure-entry-content small {
+	font-size: 0.8em;
+}
+.structure-entry-content small i {
+	vertical-align: -1px;
+}
+.structure-entry-content input[readonly] {
+	margin-top: 0.5em;
+	width: 100%;
+}
+
+/* Hide url-appendix field when creating a page */
+form[action$="/add"] .field-name-uid {
+	display: none;
+}
+
+/* Shipping methods */
+body.ltr .text .shipping-rates {
+	list-style: none;
+	margin: 0.4em 0 0;
+	padding: 0;
+}
+.shipping-rates li + li {
+	border-top: 1px solid #DDD;
+	margin-top: 0.8em;
+	padding-top: 0.7em;
+	position: relative;
+}
+.shipping-rates li + li:before {
+	content: 'OR';
+	position: absolute;
+	top: -1.05em;
+	font-size: 0.8em;
+	color: #777;
+	background: white;
+	padding-right: 0.5em;
+}
+.calculation {
+	color: #777;
+	font-style: italic;
+}
+
+/* Discount codes */
+.structure-entry-content input[readonly] {
+	border: 0;
+}
+
+/* Structure field buttons */
+.structure-entry {
+	position: relative;
+	padding-right: 5em;
+}
+.structure-entry-options {
+	position: absolute;
+	bottom: 0.25em;
+	right: 0;
+}
+.structure-entry-options .btn {
+	display: block;
+	float: none;
+	width: auto;
+	border-right: none;
+	font-size: 0.9em;
+	padding: 0 0.75em 0.5em;
+}

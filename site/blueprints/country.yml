@@ -1,0 +1,16 @@
+title: Country
+pages: false
+files: false
+options:
+  status: false
+  template: false
+  url: false
+  preview: false
+fields:
+  title: title
+    label: Country name
+    width: 1/2
+  countrycode:
+    label: ISO Country Code
+    type: text
+    width: 1/2

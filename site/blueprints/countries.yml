@@ -1,0 +1,12 @@
+title: Countries
+pages:
+  template: country
+files: false
+options:
+  delete: false
+  status: false
+  template: false
+  url: false
+  preview: false
+fields:
+  title: title

@@ -1,0 +1,6 @@
+label: Featured images
+help: Select photos to show at the top of the page.
+type:  selector
+mode:  multiple
+types:
+  - image

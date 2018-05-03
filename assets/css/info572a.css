@@ -1,0 +1,15 @@
+#pagetext {
+    width: 570px;
+    background-color: #fff;
+    z-index: 2;
+    height: 100%;
+    min-height: 700px;
+    padding: 35px 20px 0 20px;
+}
+
+a {color: #000; text-decoration: none;}
+a:hover {text-decoration: underline;}
+
+#buttons {margin-top: 75px;}
+#buttons a {margin-right: 10px;}
+

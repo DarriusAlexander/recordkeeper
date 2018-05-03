@@ -1,0 +1,128 @@
+#!/bin/bash
+
+tempfile=`mktemp`
+dest="includes/class-nelio-content-autoloader.php"
+
+cat <<EOF > $tempfile
+<?php
+/**
+ * The file that defines an autoloader class, for automatically loading classes.
+ *
+ * @package    Nelio_Content
+ * @subpackage Nelio_Content/includes
+ * @author     David Aguilera <david.aguilera@neliosoftware.com>
+ * @since      1.4.5
+ */
+
+if ( ! defined( 'ABSPATH' ) ) {
+	exit;
+}//end if
+
+/**
+ * Nelio Content's class autoloader.
+ *
+ * @package    Nelio_Content
+ * @subpackage Nelio_Content/includes/lib/settings
+ * @author     David Aguilera <david.aguilera@neliosoftware.com>
+ * @since      1.4.5
+ */
+class Nelio_Content_Autoloader {
+
+	/**
+	 * The Constructor.
+	 *
+	 * @since  1.4.5
+	 * @access public
+	 */
+	public function __construct() {
+
+		if ( function_exists( '__autoload' ) ) {
+			spl_autoload_register( '__autoload' );
+		}//end if
+
+		spl_autoload_register( array( \$this, 'autoload' ) );
+
+	}//end __construct()
+
+	/**
+	 * Loads a class file. Returns whether the file has been successfully loaded.
+	 *
+	 * @param string \$path The class file to be loaded.
+	 *
+	 * @return bool Whether the file has been successfully loaded.
+	 *
+	 * @since  1.4.5
+	 * @access private
+	 */
+	private function load_file( \$path ) {
+
+		if ( \$path && is_readable( \$path ) ) {
+			include_once( \$path );
+			return true;
+		}//end if
+
+		return false;
+
+	}//end load_file()
+
+	/**
+	 * Auto-load Nelio_Content classes on demand to reduce memory consumption.
+	 *
+	 * @param string \$class The class to be loaded.
+	 *
+	 * @since  1.4.5
+	 * @access public
+	 */
+	public function autoload( \$class ) {
+
+		if ( strpos( \$class, 'Nelio_Content_' ) !== 0 ) {
+			return;
+		}//end if
+
+		\$dictionary = array();
+EOF
+
+for file in `find admin public includes -name "*.php" | sort`
+do
+
+	if [ `echo $file | grep "includes/lib/settings" | wc -l` -eq 1 ];
+	then
+		continue
+	fi
+
+	if [ `echo $file | grep "class-nelio-content-autoloader" | wc -l` -eq 1 ];
+	then
+		continue
+	fi
+
+	class=`cat $file | grep "class Nelio_Content_.*$" | sed -e "s/.*class \(Nelio_Content[^ {]*\).*/\1/"`
+	if [ "$class" != "" ];
+	then
+		echo -e "\t\t\$dictionary['$class'] = NELIO_CONTENT_DIR . '/$file';" >> $tempfile
+		continue
+	fi
+
+	interface=`cat $file | grep "interface Nelio_Content_.*$" | sed -e "s/.*interface \(Nelio_Content[^ {]*\).*/\1/"`
+	if [ "$interface" != "" ];
+	then
+		echo -e "\t\t\$dictionary['$interface'] = NELIO_CONTENT_DIR . '/$file';" >> $tempfile
+		continue
+	fi
+
+done
+
+cat <<EOF >> $tempfile
+
+		if ( ! isset( \$dictionary[ \$class ] ) ) {
+			return;
+		}//end if
+
+		\$this->load_file( \$dictionary[ \$class ] );
+
+	}//end autoload()
+
+}//end class
+EOF
+
+mv $tempfile $dest
+chmod a+r $dest

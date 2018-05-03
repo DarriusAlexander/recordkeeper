@@ -1,0 +1,9 @@
+title: Page
+pages: true
+  template:
+    - default
+fields:
+  title: title
+  slider: slider
+  text: wysiwyg
+  relatedproducts: relatedproducts
